@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe_Dev_T</title>
+    <meta name="description" content="Vibe_Dev_T가 만든 앱 — 일어샘N6(히라가나·가타카나 첫걸음)과 문의처.">
+    <style>
+        :root {
+            --navy: #1E2A44;
+            --cream: #FBF8F3;
+            --card: #FFFFFF;
+            --gold: #805600;
+            --muted: #5B5347;
+            --border: #E3DCCF;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", "Segoe UI", Roboto, sans-serif;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 24px 16px 40px;
+            line-height: 1.7;
+            color: var(--navy);
+            background: var(--cream);
+            word-break: keep-all;
+            overflow-wrap: break-word;
+        }
+        header {
+            text-align: center;
+            padding: 24px 0 20px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 28px;
+        }
+        h1 { font-size: 28px; margin: 4px 0 2px; }
+        .tagline { color: var(--muted); font-size: 15px; margin: 0; }
+        h2 {
+            font-size: 20px;
+            margin: 32px 0 12px;
+            padding-left: 10px;
+            border-left: 4px solid var(--gold);
+        }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px 20px;
+            margin-bottom: 14px;
+        }
+        .app { display: flex; gap: 16px; align-items: flex-start; }
+        .app-icon {
+            flex: 0 0 72px;
+            width: 72px;
+            height: 72px;
+            border-radius: 16px;
+            box-shadow: 0 6px 18px rgba(30, 42, 68, 0.16);
+        }
+        .app-name { font-size: 18px; font-weight: 700; margin: 0; }
+        .app-sub { color: var(--muted); font-size: 14px; margin: 0 0 6px; }
+        .app-desc { margin: 0 0 8px; font-size: 15px; }
+        .links { margin: 0; font-size: 15px; color: var(--muted); }
+        a { color: var(--navy); font-weight: 600; text-underline-offset: 3px; }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 13px;
+        }
+        @media (max-width: 480px) {
+            h1 { font-size: 24px; }
+            .card { padding: 16px; }
+            .app-icon { flex-basis: 56px; width: 56px; height: 56px; border-radius: 13px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vibe_Dev_T</h1>
+        <p class="tagline">만든 앱과 문의처</p>
+    </header>
+
+    <main>
+        <h2>앱</h2>
+        <div class="card app">
+            <img class="app-icon" src="icon.png" alt="일어샘N6 앱 아이콘">
+            <div>
+                <p class="app-name">일어샘N6</p>
+                <p class="app-sub">히라가나·가타카나 첫걸음</p>
+                <p class="app-desc">일본어를 처음 시작하는 분을 위한 가나 학습 앱이에요.</p>
+                <p class="links">
+                    <a href="https://apps.apple.com/kr/app/id6833367392">App Store</a> ·
+                    <a href="https://tyroyun.github.io/nihongon6-support/">고객 지원</a> ·
+                    <a href="https://tyroyun.github.io/nihongon6-privacy/">개인정보처리방침</a>
+                </p>
+            </div>
+        </div>
+
+        <h2>문의</h2>
+        <div class="card">
+            <a href="mailto:cne.partners83@gmail.com">cne.partners83@gmail.com</a>
+        </div>
+    </main>
+
+    <footer>© 2026 Vibe_Dev_T</footer>
+</body>
+</html>
